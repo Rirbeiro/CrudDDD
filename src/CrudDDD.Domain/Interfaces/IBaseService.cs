@@ -8,12 +8,21 @@ namespace CrudDDD.Domain.Interfaces
 {
     public interface IBaseService<TEntity> where TEntity : BaseEntity
     {
-        TEntity Add<TValidator>(TEntity obj) where TValidator : AbstractValidator<TEntity>;
+        TOutputModel Add<TInputModel, TOutputModel, TValidator>(TInputModel inputModel)
+             where TValidator : AbstractValidator<TEntity>
+             where TInputModel : class
+             where TOutputModel : class;
 
         void Delete(int id);
-        IList<TEntity> Get();
-        TEntity GetById(int id);
-        TEntity Update<TValidator>(TEntity obj) where TValidator : AbstractValidator<TEntity>;
+
+        IEnumerable<TOutputModel> Get<TOutputModel>() where TOutputModel : class;
+
+        TOutputModel GetById<TOutputModel>(int id) where TOutputModel : class;
+
+        TOutputModel Update<TInputModel, TOutputModel, TValidator>(TInputModel inputModel)
+            where TValidator : AbstractValidator<TEntity>
+            where TInputModel : class
+            where TOutputModel : class;
 
     }
 }

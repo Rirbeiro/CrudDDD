@@ -16,6 +16,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{D7AB6C20-1D08-454E-AF2A-475F21301BE6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrudDDD.Application", "src\CrudDDD.Application\CrudDDD.Application.csproj", "{8D2D4124-D968-4ACE-9CC1-2115B17CD4CC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6E593EE8-226B-48C2-AB07-092B000E5DE1} = {6E593EE8-226B-48C2-AB07-092B000E5DE1}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrudDDD.Service", "src\CrudDDD.Service\CrudDDD.Service.csproj", "{1794C7DF-509F-417A-B3D4-01C8E4BAA5BE}"
 EndProject

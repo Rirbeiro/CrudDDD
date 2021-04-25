@@ -1,4 +1,5 @@
 ﻿using CrudDDD.Domain.Entities;
+using CrudDDD.Infra.Data.Mapping;
 using Microsoft.EntityFrameworkCore;
 
 namespace CrudDDD.Infra.Data.Context

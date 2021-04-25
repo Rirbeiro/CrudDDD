@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CrudDDD.Domain.Entities
+﻿namespace CrudDDD.Domain.Entities
 {
     public class User : BaseEntity
     {
