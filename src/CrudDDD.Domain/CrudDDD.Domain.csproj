@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="FluentValidation.AspNetCore" Version="9.5.4" />
+    <PackageReference Include="WorkflowCore.Persistence.MongoDB" Version="3.0.4" />
   </ItemGroup>
 
 </Project>
